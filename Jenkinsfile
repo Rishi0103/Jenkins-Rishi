@@ -1,12 +1,12 @@
 pipeline {
     agent any
     environment {
-        name = 'gaurav'
+        name = 'Rishi'
     }
     parameters {
-        string(name: 'person', defaultValue: 'Saurav Sharma', description: "Who are you?")
+        string(name: 'person', defaultValue: 'Rishikesh Sonawane', description: "Who are you?")
         booleanParam(name: 'isMale', defaultValue: true, description: "")
-        choice(name: 'City', choices: ['Jaipur','Mumbai','Pune' ], description: "")
+        choice(name: 'City', choices: ['Mumbai','Pune' ], description: "")
     }
     stages {
         stage('Run A command') {
